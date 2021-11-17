@@ -1,0 +1,9 @@
+<div>
+  <ul>
+    <% @restaurants.each do |r| %>
+      <li>
+        <%= r.name %> <%= '⭐️' * r.rating %>
+      </li>
+    <% end -%>
+  </ul>
+</div>
